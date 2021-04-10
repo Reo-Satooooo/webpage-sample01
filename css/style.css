@@ -1,5 +1,31 @@
-h1{
-    font-size: 72px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
+html{
+    font-family: sans-serif;
+}
+.wrapper{
+    background-color: hotpink;
+}
+
+.top{
+    background-color: brown;
+    margin: 0 0 40px 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.portfolio{
+    background-color: blue;
+}
+
+.whoami{
+    background-color: blueviolet;
+}
+
+.contact{
+    background-color: chartreuse;
+}
+
+.nav li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px;
 }
