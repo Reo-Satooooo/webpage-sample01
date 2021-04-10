@@ -33,4 +33,4 @@
 
 # ハイパーリンクの挿入
 以下のリンクは筆者のGitHubのURLです。  
-[GitHub_ID reo-output](https://github.com/reo-output)
+[GitHub_ID Reo-Satooooo](https://github.com/Reo-Satooooo)
