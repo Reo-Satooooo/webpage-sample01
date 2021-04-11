@@ -1,8 +1,46 @@
+body{
+    margin: 0 0 0 0;
+    background-color: hotpink;
+}
+
 html{
     font-family: sans-serif;
 }
-.wrapper{
-    background-color: hotpink;
+
+img {
+    max-width: 50%;/*ブラウザの伸縮*/
+    height: auto; /*ブラウザの伸縮*/
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.contact{
+    background-color: chartreuse;
+}
+
+.footer{
+    background-color: yellow;
+    margin-top: 30px;
+    padding: 80px 15px 20px 15px;
+    font-size: 12px;
+    color: red;
+}
+
+.nav{
+    position: fixed;
+}
+
+.nav li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.portfolio{
+    background-color: blue;
 }
 
 .top{
@@ -12,20 +50,70 @@ html{
     text-align: center;
 }
 
-.portfolio{
-    background-color: blue;
-}
-
 .whoami{
     background-color: blueviolet;
 }
 
-.contact{
-    background-color: chartreuse;
+.works{
+    display: flex;
 }
 
-.nav li{
-    display: inline;
-    list-style-type: none;
-    padding-right: 30px;
+.workscolor{
+    background-color: aqua;
+    margin-bottom: 16px;
+}
+
+.works-img {
+    display: block;
+    width: 300px;
+    margin-right: 16px;
+    margin-left: 16px;
+    flex: 1 1 auto;
+}
+
+.works-p {  
+    padding: 20px 8px;
+    flex: 0 0 400px;
+}
+
+.wrapper{
+    margin: 0 auto 0 auto;
+    max-width: 960px;
+    background-color: hotpink;
+}
+  
+@media screen and (max-width: 768px) {
+    .wrapper{
+        margin: 0 8px;
+    }
+    .top{
+        margin: 30px 0;
+        text-align: center
+    }
+      
+    .top img{
+        width: 200px;
+    }
+
+    .nav {
+        background-color: transparent;/*背景を透明にする*/
+    }
+      
+    .nav li{
+        display: block;
+    }
+
+    .works{
+        display: block;
+    }
+    .works-img{
+        margin-right: 0;
+        width: 100%;
+    }
+    .works-p{
+        width: 100%;
+    }
+     /*横揺れ防止*/
+    body{overflow-x:hidden;}
+    html{overflow-x:hidden;}
 }
